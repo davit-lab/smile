@@ -11,8 +11,8 @@ const Hero: React.FC = () => {
   const t = siteData[lang];
 
   const slides = [
-    { image: siteData[lang].media?.hero_slide_1 || 'https://framerusercontent.com/images/hZGvcwu0k7zo07VbJwEmzsMH7c.jpg', id: 1 },
-    { image: siteData[lang].media?.hero_slide_2 || 'https://framerusercontent.com/images/uJM98S9Hf8UAVNmz4LCDbbRr1JU.jpg', id: 2 }
+    { image: siteData[lang].media?.hero_slide_1 || 'https://i.ibb.co/rGx1fcpT/clinic.png', id: 1 },
+    { image: siteData[lang].media?.hero_slide_2 || 'https://i.ibb.co/XZvcTXkQ/472282164-904659574984257-3071026978049201708-n.jpg', id: 2 }
   ];
 
   useEffect(() => {
