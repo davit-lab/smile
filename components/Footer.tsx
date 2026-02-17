@@ -21,16 +21,23 @@ const Footer: React.FC = () => {
         <div className="bg-white py-12 md:py-24 px-5 md:px-10">
           <div className="max-w-[1440px] mx-auto grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             {/* FB Branding Block */}
-            <div className="lg:col-span-5 flex flex-col sm:flex-row items-center gap-8 bg-[#005a5a] p-8 md:p-10 rounded-[3rem] border border-gray-100 h-full">
-              <img src="https://framerusercontent.com/images/0RLn6DL4qHZwAL47gzRU28dnWk.png" alt="Smile Agency" />
-              <div className="flex flex-col justify-center text-center sm:text-left">
-                <a href="https://www.facebook.com/SmileAgency.ge" target="_blank" rel="noopener noreferrer" className="flex flex-col sm:flex-row items-center gap-4 group">
-                  <div className="w-12 h-12 rounded-xl overflow-hidden bg-white p-2.5 shadow-lg group-hover:scale-110 transition-transform shrink-0">
-                    <img src="https://framerusercontent.com/images/ghom8ltrRrfS275bArALYmSGF00.png" alt="FB" className="w-full h-full object-contain" />
-                  </div>
-                  <h4 className="text-xl md:text-2xl font-black text-white uppercase tracking-tighter group-hover:text-gray-200 transition-colors">{t.footer.fb}</h4>
-                </a>
-              </div>
+            <div className="lg:col-span-5 flex flex-col items-center justify-center gap-6 bg-[#005a5a] p-8 md:p-10 rounded-[3rem] border border-gray-100 h-full">
+              <img 
+                src="https://framerusercontent.com/images/0RLn6DL4qHZwAL47gzRU28dnWk.png" 
+                alt="Smile Agency" 
+                className="max-w-[200px] max-h-[120px] object-contain"
+              />
+              <a 
+                href="https://www.facebook.com/SmileAgency.ge" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex items-center gap-3 bg-white/10 hover:bg-white/20 transition-all px-6 py-3 rounded-xl group"
+              >
+                <div className="w-10 h-10 rounded-lg overflow-hidden bg-white p-2 shrink-0">
+                  <img src="https://framerusercontent.com/images/ghom8ltrRrfS275bArALYmSGF00.png" alt="FB" className="w-full h-full object-contain" />
+                </div>
+                <h4 className="text-lg md:text-xl font-black text-white uppercase tracking-tighter group-hover:text-gray-200 transition-colors">{t.footer.fb}</h4>
+              </a>
             </div>
 
             {/* Map Block */}
