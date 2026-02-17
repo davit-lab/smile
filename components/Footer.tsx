@@ -1,4 +1,3 @@
-
 import React, { useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { LanguageContext } from '../App';
@@ -23,8 +22,7 @@ const Footer: React.FC = () => {
           <div className="max-w-[1440px] mx-auto grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             {/* FB Branding Block */}
             <div className="lg:col-span-5 flex flex-col sm:flex-row items-center gap-8 bg-[#005a5a]/5 p-8 md:p-10 rounded-[3rem] border border-gray-100 h-full">
-                 <img src="https://framerusercontent.com/images/0RLn6DL4qHZwAL47gzRU28dnWk.png" alt="Smile Agency" className="w-full h-full object-contain brightness-0 invert" />
-              </div>
+              <img src="https://framerusercontent.com/images/0RLn6DL4qHZwAL47gzRU28dnWk.png" alt="Smile Agency" className="w-full h-full object-contain brightness-0 invert" />
               <div className="flex flex-col justify-center text-center sm:text-left">
                 <a href="https://www.facebook.com/SmileAgency.ge" target="_blank" rel="noopener noreferrer" className="flex flex-col sm:flex-row items-center gap-4 group">
                   <div className="w-12 h-12 rounded-xl overflow-hidden bg-white p-2.5 shadow-lg group-hover:scale-110 transition-transform">
