@@ -2,6 +2,9 @@ import React, { useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { LanguageContext } from '../App';
 
+// ფოტოების ვერსიების კონტროლი - შეცვალე ეს რიცხვი ყოველთვის, როცა ფოტოებს ცვლი
+const IMAGE_VERSION = '2.0';
+
 const Footer: React.FC = () => {
   const location = useLocation();
   const isContactPage = location.pathname === '/contact';
@@ -23,7 +26,7 @@ const Footer: React.FC = () => {
             {/* FB Branding Block */}
             <div className="lg:col-span-5 flex flex-col items-center justify-center gap-6 bg-[#005a5a] p-8 md:p-10 rounded-[3rem] border border-gray-100 h-full">
               <img 
-                src="https://framerusercontent.com/images/0RLn6DL4qHZwAL47gzRU28dnWk.png" 
+                src={`https://framerusercontent.com/images/0RLn6DL4qHZwAL47gzRU28dnWk.png?v=${IMAGE_VERSION}`}
                 alt="Smile Agency" 
                 className="max-w-[200px] max-h-[120px] object-contain"
               />
@@ -34,7 +37,11 @@ const Footer: React.FC = () => {
                 className="flex items-center gap-3 bg-white/10 hover:bg-white/20 transition-all px-6 py-3 rounded-xl group"
               >
                 <div className="w-10 h-10 rounded-lg overflow-hidden bg-white p-2 shrink-0">
-                  <img src="https://framerusercontent.com/images/ghom8ltrRrfS275bArALYmSGF00.png" alt="FB" className="w-full h-full object-contain" />
+                  <img 
+                    src={`https://framerusercontent.com/images/ghom8ltrRrfS275bArALYmSGF00.png?v=${IMAGE_VERSION}`} 
+                    alt="FB" 
+                    className="w-full h-full object-contain" 
+                  />
                 </div>
                 <h4 className="text-lg md:text-xl font-black text-white uppercase tracking-tighter group-hover:text-gray-200 transition-colors">{t.footer.fb}</h4>
               </a>
@@ -71,15 +78,27 @@ const Footer: React.FC = () => {
             <h6 className="text-lg font-black uppercase tracking-widest mb-8 border-b border-white/10 pb-4">{t.footer.contact}</h6>
             <div className="space-y-8">
               <a href="tel:555585356" className="flex items-center gap-5 group">
-                <div className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center group-hover:bg-white group-hover:text-[#005a5a] transition-all"><svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div>
+                <div className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center group-hover:bg-white group-hover:text-[#005a5a] transition-all">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                  </svg>
+                </div>
                 <p className="text-lg font-bold">555 58 53 56</p>
               </a>
               <a href="mailto:Smileagency2020@gmail.com" className="flex items-center gap-5 group">
-                <div className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center group-hover:bg-white group-hover:text-[#005a5a] transition-all"><svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+                <div className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center group-hover:bg-white group-hover:text-[#005a5a] transition-all">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                  </svg>
+                </div>
                 <p className="text-base font-bold underline underline-offset-4">Smileagency2020@gmail.com</p>
               </a>
               <div className="flex items-center gap-5 group">
-                <div className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center"><svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+                <div className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                </div>
                 <p className="text-sm md:text-base font-bold leading-tight">{t.common.address}</p>
               </div>
             </div>
