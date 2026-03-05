@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import { LanguageContext } from '../App';
 
 export const teamData = [
-  { id: 'tea-gotsiridze', name: { ka: 'თეა გოცირიძე', en: 'Tea Gotsiridze' }, role: { ka: 'კლინიკის ხელმძღვანელი / იმპლანტოლოგი', en: 'Clinic Head / Implantologist' }, image: 'https://framerusercontent.com/images/NL9ZihxOkco4TeWtDDi8fz20.jpg' },
-  { id: 'giorgi-beridze', name: { ka: 'გიორგი ბერიძე', en: 'Giorgi Beridze' }, role: { ka: 'თერაპევტი / ორთოდონტი', en: 'Therapist / Orthodontist' }, image: 'https://framerusercontent.com/images/Es82GeniQfvbrLe8GIg5ctOEq6M.jpg' },
-  { id: 'nino-kapanadze', name: { ka: 'ნინო კაპანაძე', en: 'Nino Kapanadze' }, role: { ka: 'ბავშვთა სტომატოლოგი', en: 'Pediatric Dentist' }, image: 'https://framerusercontent.com/images/0JhnuSVKqzhBvoFbmldufpEA.jpg' },
-  { id: 'david-makharadze', name: { ka: 'დავით მახარაძე', en: 'David Makharadze' }, role: { ka: 'ყბა-სახის ქირურგი', en: 'Maxillofacial Surgeon' }, image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=800' },
+  { id: 'tea-gotsiridze', name: { ka: 'თეა გოცირიძე', en: 'Tea Gotsiridze' }, image: 'https://framerusercontent.com/images/NL9ZihxOkco4TeWtDDi8fz20.jpg' },
+  { id: 'giorgi-beridze', name: { ka: 'გიორგი ბერიძე', en: 'Giorgi Beridze' },image: 'https://framerusercontent.com/images/Es82GeniQfvbrLe8GIg5ctOEq6M.jpg' },
+  { id: 'nino-kapanadze', name: { ka: 'ნინო კაპანაძე', en: 'Nino Kapanadze' },  image: 'https://framerusercontent.com/images/0JhnuSVKqzhBvoFbmldufpEA.jpg' },
+  { id: 'david-makharadze', name: { ka: 'დავით მახარაძე', en: 'David Makharadze' }, image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=800' },
 ];
 
 const TeamPage: React.FC = () => {
