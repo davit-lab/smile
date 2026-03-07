@@ -1,7 +1,0 @@
-{
-  "name": "Smile Agency Dental Clinic",
-  "description": "A high-end dental care website featuring comprehensive services, professional team info, and advanced equipment showcase.",
-  "requestFramePermissions": [
-    "geolocation"
-  ]
-}
